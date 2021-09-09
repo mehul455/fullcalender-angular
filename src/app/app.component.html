@@ -1,0 +1,8 @@
+<button (click)="updateHeader()" id="updateHeader">Update header</button>
+<button (click)="updateEvents()" id="updateEvents">Update events</button>
+<full-calendar
+  *ngIf="calendarOptions"
+  #fullcalendar
+  [options]="calendarOptions"
+></full-calendar>
+<router-outlet></router-outlet>
